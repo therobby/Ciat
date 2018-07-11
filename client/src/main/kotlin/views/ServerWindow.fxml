@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.25" prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox prefHeight="483.0" prefWidth="122.0">
+        <Label alignment="CENTER" prefHeight="20.0" prefWidth="40000.0" text="Channels" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TreeView fx:id="channelsTree" prefHeight="40000.0" prefWidth="40000.0" showRoot="false" />
+        <Button fx:id="serverSendButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="40000.0" text="Send" />
+    </VBox>
+    <VBox prefHeight="200.0" prefWidth="100.0">
+        <children>
+            <TextArea fx:id="serverCommands" editable="false" prefHeight="40000.0" prefWidth="40000.0" wrapText="true" />
+            <TextField fx:id="serverCommandLine" prefHeight="30.0" prefWidth="40000.0" />
+        </children>
+    </VBox>
+</SplitPane>
